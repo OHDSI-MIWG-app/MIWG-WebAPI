@@ -2,7 +2,8 @@ FROM maven:3.6-jdk-11 as builder
 
 WORKDIR /code
 
-ARG MAVEN_PROFILE=webapi-docker
+ARG MAVEN_PROFILE=webapi-window-docker
+#webapi-linux-docker for linux
 ARG MAVEN_PARAMS="" # can use maven options, e.g. -DskipTests=true -DskipUnitTests=true
 
 ARG OPENTELEMETRY_JAVA_AGENT_VERSION=1.17.0
@@ -12,7 +13,7 @@ RUN curl -LSsO https://github.com/open-telemetry/opentelemetry-java-instrumentat
 COPY pom.xml /code/
 RUN mkdir .git \
     && mvn package \
-     -P${MAVEN_PROFILE}
+    -P${MAVEN_PROFILE}
 
 ARG GIT_BRANCH=unknown
 ARG GIT_COMMIT_ID_ABBREV=unknown
