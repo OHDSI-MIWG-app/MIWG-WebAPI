@@ -2,8 +2,7 @@ FROM maven:3.6-jdk-11 as builder
 
 WORKDIR /code
 
-ARG MAVEN_PROFILE=webapi-window-docker
-#webapi-linux-docker for linux
+ARG MAVEN_PROFILE=webapi-docker
 ARG MAVEN_PARAMS="" # can use maven options, e.g. -DskipTests=true -DskipUnitTests=true
 
 ARG OPENTELEMETRY_JAVA_AGENT_VERSION=1.17.0
