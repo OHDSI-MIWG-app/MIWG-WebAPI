@@ -360,7 +360,7 @@
       "doseUnitCS": "with dose unit concept",
       "drugTypeCS": "with drug type concept",
       "ethnicityCS": "with ethnicity concept",
-      "genderCS": "with gender conept",
+      "genderCS": "with gender concept",
       "measurementTypeCS": "with measurement type concept",
       "modifierCS": "with modifier concept",
       "observationTypeCS": "with observation type concept",
@@ -912,6 +912,22 @@
       "customEraStrategyText_9": "change",
       "selectDrugConceptSet": "Select Drug Concept Set"
     },
+    "conditionImageOccurrence": {
+      "conditionImageOccurrenceText_1": "an image occurrence of",
+      "anyCondition": "Any Image",
+      "addAttribute": "Add attribute...",
+      "dateAdjustment": "with date adjustment:",
+      "firstDiagnosis": "for the first time in the person's history",
+      "age": "Age is:",
+      "gender": "Gender is:",
+      "genderCS": "Gender is (from concept set):",
+      "startDate": "Occurrence start is:",
+      "visit": "Visit is:",
+      "visitCS": "Visit is (from concept set):",
+      "procedure": "Procedure is:",
+      "anatomicSite": "Anatomic site is:",
+      "modality": "Modality is:"
+    },
     "cyclops": {
       "controlEditor": {
         "convergenceType": "Select the convergence type:",
@@ -1003,7 +1019,7 @@
     "evidencePairViewer": {
       "evidencePairViewerText_1": "loading evidence pairs",
       "evidencePairViewerText_2": "If CommonEvidenceModel has indicated there is product label information for the selected drug-condition pair (1 = true, 0 = false) you may see many product labels below. The count of labels is non-informative since an adverse event on one label is supposed to be on all product labels. So, this page will show all product labels for the selected drug-condition pair.",
-      "evidencePairViewerText_3": "If the CommonEvidenceModel has listed a number of publications, on the “Viewing Evidence” pop-up, one publication may occur multiple times in the results below.  This is because for every drug-condition pair a publication matches, the publication will show up in “View Evidence” list.",
+      "evidencePairViewerText_3": "If the CommonEvidenceModel has listed a number of publications, on the 'Viewing Evidence' pop-up, one publication may occur multiple times in the results below.  This is because for every drug-condition pair a publication matches, the publication will show up in 'View Evidence' list.",
       "evidencePairViewerText_4": "Click here for more information about this evidence list",
       "evidencePairViewerText_5": "Hide details",
       "evidencePairViewerText_6": "The concept set is not marked as valid to generate results. Please make sure this concept set contains only CONDITIONS or DRUGS."
@@ -2840,7 +2856,7 @@
           "title": "Analysis Types"
         },
         "cohortDefinition": {
-          "text_1": "A cohort is defined as the set of persons satisfying one or more inclusion criteria for a duration of time. One person may qualify for one cohort multiple times during non-overlapping time intervals. Cohorts are constructed in ATLAS by specifying cohort entry criteria and cohort exit criteria. Cohort entry criteria involve selecting one or more initial events, which determine the start date for cohort entry, and optionally specifying additional inclusion criteria which filter to the qualifying events. Cohort exit criteria are applied to each cohort entry record to determine the end date when the person’s episode no longer qualifies for the cohort.",
+          "text_1": "A cohort is defined as the set of persons satisfying one or more inclusion criteria for a duration of time. One person may qualify for one cohort multiple times during non-overlapping time intervals. Cohorts are constructed in ATLAS by specifying cohort entry criteria and cohort exit criteria. Cohort entry criteria involve selecting one or more initial events, which determine the start date for cohort entry, and optionally specifying additional inclusion criteria which filter to the qualifying events. Cohort exit criteria are applied to each cohort entry record to determine the end date when the person's episode no longer qualifies for the cohort.",
           "title": "Cohort Definition"
         },
         "linkToCohortDefinition": {
@@ -3847,6 +3863,12 @@
         "desc_observation": "Filter Observations based on visit occurrence of observation.",
         "title_procedureoccurrence": "Add Visit Concept Set Criteria",
         "desc_procedureoccurrence": "Filter Procedure Occurrences based on visit occurrence of procedure."
+      },
+      "addImageOccurrence": {
+        "title": "Add Image Occurrence",
+        "desc_initial": "Find patients based on image occurrences.",
+        "desc_censoring": "Exit cohort based on image occurrences.",
+        "desc_group": "Find patients based on image occurrences."
       }
     },
     "newEntityNames": {

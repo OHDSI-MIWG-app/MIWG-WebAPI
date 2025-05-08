@@ -30,6 +30,8 @@ import java.io.InputStream;
 import java.util.*;
 import java.util.stream.Collectors;
 import org.springframework.cache.annotation.CacheEvict;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Path("/source/")
 @Component
@@ -37,6 +39,8 @@ import org.springframework.cache.annotation.CacheEvict;
 public class SourceController extends AbstractDaoService {
 
   public static final String SECURE_MODE_ERROR = "This feature requires the administrator to enable security for the application";
+
+  private static final Logger logger = LoggerFactory.getLogger(SourceController.class);
 
   @Autowired
   private ApplicationEventPublisher publisher;
@@ -75,8 +79,12 @@ public class SourceController extends AbstractDaoService {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   public Collection<SourceInfo> getSources() {
-
-    return sourceService.getSources().stream().map(SourceInfo::new).collect(Collectors.toList());
+    logger.debug("SourceController.getSources() 호출됨");
+    Collection<SourceInfo> sources = sourceService.getSources().stream()
+        .map(SourceInfo::new)
+        .collect(Collectors.toList());
+    logger.debug("{}개의 소스 정보를 반환합니다.", sources.size());
+    return sources;
   }
 
   /**
@@ -90,10 +98,13 @@ public class SourceController extends AbstractDaoService {
   @GET
   @Produces(MediaType.APPLICATION_JSON)
   public Collection<SourceInfo> refreshSources() {
+    logger.debug("SourceController.refreshSources() 호출됨");
     sourceService.invalidateCache();
     vocabularyService.clearVocabularyInfoCache();
     sourceService.ensureSourceEncrypted();
-    return getSources();
+    Collection<SourceInfo> sources = getSources();
+    logger.debug("캐시 갱신 후 {}개의 소스 정보를 반환합니다.", sources.size());
+    return sources;
   }
 /**
  * Get the priority vocabulary source.
