@@ -2,6 +2,11 @@
 
 OHDSI WebAPI contains all OHDSI RESTful services that can be called from OHDSI applications.
 
+## Todo
+
+- You should configure a PostgreSQL environment that includes the WebAPI schema.
+- You must set the PostgreSQL database username and password in the `pom.xml` file.
+
 ## Features
 
 - Provides a centralized API for working with 1 or more databases converted to the [Common Data Model](https://github.com/OHDSI/CommonDataModel) (CDM) v5.
@@ -38,6 +43,7 @@ The following parameters are used:
 - `security.saml.callbackUrl=http://localhost:8080/WebAPI/user/saml/callback` - URL called from identity provider after login
 
 Sample idp metadata and sp metadata config files for okta:
+
 - `saml/dev/idp-metadata-okta.xml`
 - `saml/dev/sp-metadata-okta.xml`
 
@@ -79,4 +85,5 @@ It was chosen to use embedded PG instead of H2 for unit tests since H2 doesn't s
 - Only Non-SNAPSHOT dependencies should be presented in POM.xml on release branches/tags.
 
 ## License
+
 OHDSI WebAPI is licensed under Apache License 2.0
