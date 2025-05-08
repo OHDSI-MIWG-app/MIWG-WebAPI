@@ -957,32 +957,6 @@
       "expressionCartoonBindingsText_9": "<%=type%> <%=count%>에서 <%=distinctOrAll%> 발생 사용",
       "expressionCartoonBindingsText_10": "다음 기간의 사이에 발생 <%=startDays%> 일 <%=beforeArAfterStart%> 및 <%=endDays%> 일 <%=beforeArAfterEnd%> 인덱스"
     },
-    "exploreCohort": {
-      "fetchingFirst": "먼저 불러오기",
-      "members": "구성원",
-      "exploreCohortText_1": "이 코호트는 확인할 수 있는 구성원이 없습니다. Atlas의 코호트 정의 섹션에서 실행 상태를 확인하십시오.",
-      "exploreCohortText_2": "이 코호트는 선택한 데이터 소스에서 확인할 수 있는 구성원이 없습니다. 생성(generation) 탭을 사용하여 코호트가 생성됐는지 확인하십시오."
-    },
-    "export": {
-      "button": "내보내기",
-      "progress": "추출(export) 진행중"
-    },
-    "exportSql": {
-      "incorrectDesign": "Cannot generate SQL: design of the analysis is incorrect"
-    },
-    "feasibilityAttritionReport": {
-      "attritionVisualization": "축소 시각화",
-      "inclusionRule": "포함 규칙",
-      "percentRemain": "% 잔류",
-      "precentDiff": "% 차이"
-    },
-    "feasibilityIntersectReport": {
-      "inclusionRule": "포함 규칙",
-      "percentSatisfied": "% 만족",
-      "percentToGain": "% 증가 (To-Gain)",
-      "populationVisualization": "인구 시각화",
-      "rectSummary": "<%=size%> 명 (<%=percentage%>%), <%=passCount%> 기준 통과, <%=failCount%> 기준 미달."
-    },
     "feasibilityReportViewer": {
       "feasibilityReportViewerText_1": "일치 비율",
       "feasibilityReportViewerText_2": "일치된 건 수",
@@ -1711,156 +1685,6 @@
     "vocabularies": "용어(vocabularies)",
     "viewCountMessage":  "View record count for:"
   },
-  "cs": {
-    "browser": {
-      "caption": "컨셉 세트",
-      "compare": {
-        "compareConceptSets": "컨셉 세트 비교",
-        "comparisonResults": "비교 결과",
-        "conceptSet1": "컨셉 세트 1:",
-        "conceptSet2": "컨셉 세트 2:",
-        "heading": "컨셉 세트 비교",
-        "headingMessage": "이 유틸리티를 사용하여 두 컨셉 세트가 공유하고 있는 컨셉을 확인하세요",
-        "modalTitle": "컨셉 세트 선택",
-        "sameConcepts": "Compared Concept Sets contain Concepts which are identical",
-        "sameWarning": "동일한 컨셉 세트를 비교할 수 없습니다.",
-        "saveFromComparisonNameTail": "- 비교",
-        "saveMessage": "아래 선택에서 새 컨셉 세트 저장",
-        "saveWarning": "이 비교 기능을 수행하기 전에 현재의 컨셉 세트를 저장해야합니다.",
-        "vennDiagram": "Venn Diagram",
-        "vennDiagramAmountConcepts": "The amount: <%=count%>",
-        "vennDiagramAmountOnly": "The concepts are only in this concept set: <%=amountOnly%>",
-        "vennDiagramCommonConcepts": "Common Concepts",
-        "vennDiagramNameConceptSet": "<%=name%> concept set",
-        "vennDiagramTotalAmountConcepts": "The total amount of concepts: <%=count%>",
-        "viewCountMessage": "다음에 대한 데이터베이스 레코드 수 (RC) 및 하위 레코드 수 (DRC)보기 :"
-      },
-      "exportConceptSetsButton": "컨셉 세트 내보내기",
-      "exportConceptSetsNumber": "<b><%=num%></b> 내보내기 위해 선택된 컨셉 세트..",
-      "exportInstructions": " ",
-      "exportInstructionsText": "하단의 표에서 내보낼 컨셉 세트를 선택하시고, '컨셉 세트 내보내기'를 클릭하시어 컨셉 세트를 다운하십시오.",
-      "tabs": {
-        "export": "내보내기",
-        "list": "리스트"
-      }
-    },
-    "manager": {
-      "attemptingToFindMessage": "이 컨셉 세트에 대한 최적의 정의를 찾는 중...",
-      "cancelButton": "취소",
-      "caption": "컨셉 세트 # <%=id%>",
-      "captionVersion": "Concept Set #<%=id%> - Version <%=number%> Preview",
-      "changeColumnsButton": "열(Columns) 변경",
-      "conceptsRemovedHeading": "삭제된 컨셉",
-      "conceptsRemovedMessage": "다음 컨셉들은 최적화된 버전에 이미 포함되어 있으므로 제거되었습니다.",
-      "createOption": "새로운 컨셉 세트 생성",
-      "csAlreadyExistsMessage": "이 이름으로 설정된 컨셉 세트가 이미 있습니다. 다른 이름을 선택하십시오.",
-      "csDeleteConfirmMessage": "컨셉 세트를 삭제 하시겠습니까? 경고 : 삭제시 다시 되돌릴 수 없습니다!",
-      "csNotSavedConfirmMessage": "컨셉 세트 변경 사항은 저장되지 않습니다. 계속 하시겠습니까?",
-      "csSaveErrorMessage": "컨셉 세트를 저장하는 중에 오류가 발생했습니다.",
-      "exploreEvidence": {
-        "additionalInformation": "추가 정보:",
-        "anchor1": "ATLAS에서 음성 대조군(Negative Control) 얻기",
-        "anchor2": "음성 대조군(Negative Control) 프로세싱에 대한 높은 수준의 정보",
-        "anchor3": "추가적인 리소스(resources)",
-        "chooseAConceptSet": "컨셉 세트 선택",
-        "deletedCcMessage": "지정된 컨셉 세트 (#<%=cs%>)이 삭제되었습니다. 다른 컨셉 세트를 선택하십시오.",
-        "drugLabelEvidence": "약물 라벨 증거(Evidence) :",
-        "drugLabelEvidenceDetails": "세부사항",
-        "drugLabelEvidenceEnd": "CEM의 약물 라벨.",
-        "drugLabelEvidenceFound": "발견된",
-        "drugLabelEvidenceOf": "의",
-        "drugLabelsFound": "발견된 약물 라벨",
-        "drugLabelsNotFound": "약물 라벨을 찾을 수 없음",
-        "evidenceForAll": "전체(all)에 대한 증거(Evidence)",
-        "evidenceForAllFor": "에 대한",
-        "evidenceSources": "증거(Evidence) 소스",
-        "excludeLabel": "알려진 양성 대조군(positive controls)으로 제외하고 싶은 개념은 무엇입니까? (선택사항)",
-        "generate": "생성",
-        "generated": "생성 시작 시간",
-        "generationDuration": "생성 작업 시간",
-        "generationSettings": "실행(Generation) 설정",
-        "generationStatus": "생성 상태",
-        "includeLabel": "알려진 음성 대조군(Negative Control)으로 어떤 컨셉을 포함시키겠습니까? (선택사항)",
-        "invalidCsWarning": "저장된 컨셉은 여러 도메인 또는 조건 또는 약물 이외의 도메인에서 제공됩니다. 컨셉 세트에는 증거(Evidence)를 탐색하기 위해 조건 또는 약물만 포함되어야합니다.",
-        "loadingEvidence": "증거(Evidence) 로드",
-        "message1": "증거(Evidence)는 다음에서 유래됨",
-        "message2": "증거(Evidence)기반은 출판된 문헌, 제품 라벨 및 자발적 보고서에서 발견된 증거로 구성됩니다. 이 컨셉 세트에 포함 된 컨셉과 관련된 증거를 찾으려면 아래 증거 출처를 사용하십시오.",
-        "noCsWarning": "SNOMED의 Ingredient 클래스 수준 OR 조건에서 RxNorm 어휘에있는 약물로 컨셉 세트를 정의해야합니다. 컨셉 세트에는 증거(Evidence)를 탐색하기 위해 조건 또는 약물만 포함되어야합니다.",
-        "noEvidenceFoundFor": "증거(Evidence)가 없습니다.",
-        "saveNewButton": "아래 선택에서 새 컨셉 세트 저장",
-        "title": "증거(Evidence) 탐색 :",
-        "viewDatabaseRecordCounts": "다음에 대한 데이터베이스 레코드 카운트 (RC) 및 하위 레코드 카운트 (DRC) 보기 :",
-        "viewEvidence": "증거(Evidence) 보기",
-        "viewingEvidence": "증거(Evidence) 보기"
-      },
-      "fullyOptimizedMessage": "현재 컨셉 세트 정의는 완전히 최적화되어 있습니다.",
-      "optimize": "최적화",
-      "optimizedConceptSetHeading": "최적화된 컨셉 세트",
-      "overwriteOption": "현재 컨셉 세트 덮어 쓰기",
-      "pleaseProvideNameMessage": "새 컨셉 세트의 이름을 입력하십시오.",
-      "pleaseReviewMessage": "최적화된 정의 및 저장 옵션을 검토하십시오.",
-      "resetColumnsButton": "열 재설정",
-      "saveButton": "저장",
-      "saveOptions": "저장 옵션",
-      "showAllColumnsButton": "모든 열 표시",
-      "tabs": {
-        "compare": "비교",
-        "conceptSetExpression": "컨셉 세트 표현식",
-        "exploreEvidence": "Evidence 탐색",
-        "export": "내보내기",
-        "includedConcepts": "포함된 컨셉",
-        "includedSourceCodes": "포함된 소스 코드",
-        "versions": "Versions",
-        "messages": "메시지"
-      },
-      "concept": {
-        "title": "어휘(Vocabulary) > 컨셉",
-        "standard": "표준",
-        "nonStandard": "비표준",
-        "classification": "분류",
-        "tabs": {
-          "details": {
-            "caption": "세부사항",
-            "property": "특성",
-            "value": "값",
-            "conceptName": "컨셉 이름",
-            "domainId": "도메인 ID",
-            "conceptClassId": "컨셉 클래스 ID",
-            "vocabularyId": "어휘(Vocabulary) ID",
-            "conceptId": "컨셉 ID",
-            "conceptCode": "컨셉 코드",
-            "invalidReason": "무효한 근거",
-            "standardConcept": "표준 컨셉",
-            "validStartDate": "Valid Start Date",
-            "validEndDate": "Valid End Date"
-          },
-          "relatedConcepts": {
-            "loading": "관련 컨셉 로딩…",
-            "caption": "관련 컨셉"
-          },
-          "hierarchy": {
-            "loading": "계층 로딩…",
-            "caption": "계층 구조",
-            "noHierarchyFoundMessage": "비표준 컨셉에 대한 계층 구조가 없습니다.",
-            "view": "보기:",
-            "fullHierarchy": "전체 계층 구조",
-            "parents": "부모",
-            "currentConcept": "현재 컨셉",
-            "children": "자식",
-            "noParentConceptsFound": "부모 컨셉이 없습니다.",
-            "noChildConceptsFound": "자식 컨셉이 없습니다."
-          },
-          "recordCounts": {
-            "loading": "기록 수 로딩…",
-            "caption": "레코드 카운트",
-            "recordCountsAcrossSources": "소스의 레코드 카운트",
-            "failedToLoadData": "데이터 로드 실패"
-          }
-        }
-      },
-      "conceptSetOptimization": "컨셉 세트 최적화"
-    }
-  },
   "cc": {
     "title": "코호트 특성",
     "new": "새",
@@ -2136,108 +1960,6 @@
     "toggleChartTooltip": "차트 표시 전환",
     "toggleTableTooltip": "테이블 표시 전환",
     "сantFind": "찾을 수 없습니다"
-  },
-  "pathways": {
-    "loading": "경로 분석 목록 로드중...",
-    "manager": {
-      "caption": "코호트 경로 #<%=id%>",
-      "captionVersion": "Cohort Pathway #<%=id%> - Version <%=number%> Preview",
-      "design": {
-        "analysisSettings": {
-          "combinationWindow": {
-            "description": "통합으로 간주되기 위해 두 개의 이벤트 코호트가 겹쳐야 하는 시간 범위.",
-            "title": "통합 기간 범위:"
-          },
-          "description": "경로 분석을 수행할 때 다음의 설정이 사용됩니다.",
-          "maximumPathLength": {
-            "description": "Sunburst plot에 포함될 경로 단계의 최대수.",
-            "title": "최대 경로 길이:"
-          },
-          "minimumCellCount": {
-            "description": "경로에서 수 집계를 위해 주어진 이벤트에 대한 표적 코호트의 최소 대상자 수.",
-            "title": "최소 분석 단위 수:"
-          },
-          "allowRepeats": {
-            "description": "코호트 이벤트/콤보가 동일한 경로에서 여러 번 표시 되도록 허용.",
-            "title": "반복 허용:"
-          },
-          "title": "분석 설정"
-        },
-        "description": "코호트 경로(Cohort pathway)의 분석은 표적 코호트에 속한 사람들 중에서 이벤트 코호트로 정의된 여러 이벤트들이 발생한 전이 과정을 생성하는 프로세스로 정의됩니다.",
-        "eventCohorts": {
-          "description": "각 이벤트 코호트는 대상 코호트에 속한 사람들에게 발생할 수 있는 경로의 단계를 정의합니다.",
-          "title": "이벤트 코호트"
-        },
-        "targetCohorts": {
-          "description": "각각의 표적코호트는 이벤트 코호트를 통한 경로들로 분석됩니다.",
-          "title": "표적 코호트"
-        }
-      },
-      "executions": {
-        "title": "실행",
-        "dialogs": {
-          "design": {
-            "loadError": "설계를 로드할 수 없습니다.",
-            "title": "설계"
-          }
-        },
-        "results": {
-          "date": "날짜:",
-          "design": "설계:",
-          "details": {
-            "noPath": "경로가 선택되지 않음 : 상세정보를 위해 경로를 클릭하세요",
-            "title": "경로 상세정보"
-          },
-          "diagram": {
-            "title": "썬버스트(Sunburst) 플롯"
-          },
-          "filters": {
-            "cohorts": "코호트"
-          },
-          "legend": {
-            "eventCohorts": "이벤트 코호트",
-            "personsCount": "경로별 환자 수:",
-            "personsPortion": "전체 대상 코호트 환자 수 대비 pathway 내 환자 수 비율:",
-            "targetCohort": "표적 코호트",
-            "targetCohortCount": "표적 코호트 수:",
-            "title": "범례"
-          },
-          "noPathways": "경로가 발견되지 않았습니다",
-          "title": "Pathway 리포트",
-          "visualization": "시각화",
-          "tabular": "표의",
-          "tableview": {
-            "cohortName": "코호트 <%=name%>",
-            "maximumPathLength": "최대 경로 길이 :",
-            "allPathwaysTitle": "테이블 <%=index%> a : 모든 경로",
-            "eventCohortCountsByRank": "테이블 <%=index%> b : 순위별 이벤트 코호트 카운트",
-            "eventCohortCounts": "테이블 <%=index%> c : 이벤트 코호트 카운트",
-            "distinctEventCohorts": "테이블 <%=index%> d : 고유한 이벤트 코호트",
-            "stepN": "단계 <%=i%>",
-            "exactly": "정확히 <%=v%>"
-          }
-        }
-      },
-      "loading": "코호트 경로 분석 로드중...",
-      "messages": {
-        "alreadyExists": "이 이름의 코호트 경로가 이미 존재합니다. 다른 이름을 선택하십시오.",
-        "beforeClose": "변경 사항은 저장되지 않습니다. 계속 하시겠습니까?",
-        "deleteConfirmation": "확실합니까?",
-        "saveFailed": "코호트 경로를 저장하는 중에 오류가 발생했습니다.",
-        "notfound": "id = %d 인 경로 분석이 없습니다."
-      },
-      "tabs": {
-        "design": "설계",
-        "executions": "실행",
-        "utilities": "유틸리티",
-        "versions": "Versions",
-        "messages": "메시지"
-      },
-      "utilities": {
-        "title": "유틸리티"
-      }
-    },
-    "title": "코호트 경로"
   },
   "ple": {
     "analysisExistsAlert": "이 이름의 추정(estimation) 분석이 이미 존재합니다. 다른 이름을 선택하십시오.",
@@ -2924,12 +2646,10 @@
       "averageLengthOfStay": "평균 체류 기간 (일)",
       "chargedCost": "청구된 비용(Charged cost)",
       "chargedCostPMPM": "청구된 비용(Charged cost) PMPM",
-      "costUtilizationText_1": "CSV로 저장",
-      "displayCharts": "표시된 차트 :",
-      "drugUtilDetailedText_1": "약물 요약으로 돌아가기",
-      "drugUtilSummaryText_1": "자세한 통계를 보려면 약물을 클릭하십시오.",
-      "drugUtilText_1": "모든 약물에 대한 요약",
-      "drugUtilText_2": "자세한 약물 보고서",
+      "costUtilDetailedText_1": "약물 요약으로 돌아가기",
+      "costUtilDetailedText_2": "자세한 통계를 보려면 약물을 클릭하십시오.",
+      "costUtilText_1": "모든 약물에 대한 요약",
+      "costUtilText_2": "자세한 약물 보고서",
       "exposure1kYear": "노출/ p 1k /년",
       "paidAllowed": "유료(paid)/허용",
       "paidCost": "지불된 비용(Paid cost)",
@@ -3151,6 +2871,12 @@
         "desc_observation": "관찰이 발생한 방문을 기반으로 Observation을 필터링합니다.",
         "title_procedureoccurrence": "Visit 조건 추가",
         "desc_procedureoccurrence": "Procedure  발생 방문을 기반으로 Procedure Occurrence를 필터링합니다."
+      },
+      "addImageOccurrence": {
+        "title": "Image Occurrence 추가",
+        "desc_initial": "Image Occurrence를 기반으로 환자를 찾습니다.",
+        "desc_censoring": "Image Occurrence를 기반으로 코호트에서 제외합니다.",
+        "desc_group": "Image Occurrence를 기반으로 환자를 찾습니다."
       },
       "addVisitDetail": {
         "title": "Add Visit detail",
